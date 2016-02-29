@@ -17,7 +17,11 @@
 		"**/.*",
 		"node_modules",
 		"bower_components",
-		"pages"
+		"pages",
+		"Gruntfile.js",
+		"app.js",
+		"index.html",
+		"package.json"
 	],
 	"dependencies": {
 		"angular":"~1.2.0",
