@@ -1,33 +1,28 @@
-# Angular module to use Rome, a dependencie free date-picker 
+# ng-rome
 
-[TODO - brief summary]
-
-## Demo
-http://barbosajlm.github.io/ng-rome/
+This module provides a directive to use [Rome](https://github.com/bevacqua/rome) inside your angular app.
+If you don't know [Rome](https://github.com/bevacqua/rome), please check is demo page, [here](http://bevacqua.github.io/rome/).
 
 ## Dependencies
 - required:
-	[TODO]
-- optional
-	[TODO]
-
-See `bower.json` and `index.html` in the `gh-pages` branch for a full list / more details
+	* [Rome](https://github.com/bevacqua/rome)
 
 ## Install
 1. download the files
-	1. Bower
-		1. add `"ng-rome": "latest"` to your `bower.json` file then run `bower install` OR run `bower install ng-rome`
+	**Install dependencies** 
+
+	```
+	bower install ng-rome
+	```
+		
 2. include the files in your app
-	1. `.min.js`
-	2. `.less` OR `.min.css` OR `.css`
-3. include the module in angular (i.e. in `app.js`) - `barbosajlm.ng-rome`
+	1. rome.min.js
+	2. `ng-rome.min.js`
+
+3. include the module in angular (i.e. in `app.js`) - `ng-rome`
 
 See the `gh-pages` branch, files `bower.json` and `index.html` for a full example.
 
-
-## Documentation
-See the `.js` file top comments for usage examples and documentation
-https://github.com/barbosajlm/ng-rome/blob/master/.js
 
 
 ## Development
@@ -49,3 +44,15 @@ https://github.com/barbosajlm/ng-rome/blob/master/.js
 	4. `git push origin gh-pages`
 5. (optional) register bower component
 	1. `bower register ng-rome [git repo url]`
+
+## License
+
+The MIT License (MIT)
+
+Copyright © 2016 João Barbosa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
