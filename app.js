@@ -22,8 +22,7 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', '$romeProvide
 	staticPath ='/';		//nodejs (local)
 	// staticPath ='/ng-rome/';		//gh-pages
 	var appPathRoute ='/';
-	var pagesPath =staticPath+'pages/';
-	
+	var pagesPath =staticPath+'pages/';	
 	
 	$routeProvider.when(appPathRoute+'home', {templateUrl: pagesPath+'home/home.html'});
 	$routeProvider.otherwise({redirectTo: appPathRoute+'home'});
