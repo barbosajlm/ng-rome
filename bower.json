@@ -4,6 +4,7 @@
 	"authors": [
 		"João Barbosa <me@barbosajlm.com>"
 	],
+	"main": "./dist/ng-rome.min.js",
 	"description": "Angular module to use Rome, a dependencie free date-picker ",
 	"keywords": [
 		"date-picker",
