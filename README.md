@@ -20,7 +20,7 @@ If you don't know [Rome](https://github.com/bevacqua/rome), please check is demo
 
 ## Usage
 
-### @ config fase
+### @ config
 
 **ng-rome** contains a provider, **$romeProvider** so you could define some settings as default for your application.
 Just add **$romeProvider** as a dependencie at config fase.
@@ -34,13 +34,36 @@ angular
 
 ```
 
-You have two methods available for that:
+**Methods available:**
 
-#### 
+#### .setOption( option, value );
 
+This method configures a single option. The option to configure must be identified by name in the attribute `option`.
 
+#### .setMultipleOptions( {options} );  
 
+This method configures multiple options. The attribute `options` MUST BE an object where each field name is the options name.
 
+**NOTE:** To check the default configuration an possible options see [Rome](https://github.com/bevacqua/rome).
+
+### @ code
+
+#### simple usage
+
+To use `ng-rome` just add the tag `<ng-rome ng-model="yourModelGoesHere"></ng-rome>` to your html.
+
+#### options available
+
+**rome-options**(optional)
+
+With simple usage you get the default configuration plus the custom options you defined on the provider. 
+If you want to override that configuration in a specific case you could use the attribute `rome-options` and pass an object 
+just like in **.setMultipleOptions( {options} )**.
+
+**rome-inline**(optional)
+
+True or False(default: false). If you don't specifie this attribute your or sett it to false [Rome](https://github.com/bevacqua/rome) will be an input tag.
+Otherwise a `<div>` will show the calendar inline. You can check this at [Rome demo page](http://bevacqua.github.io/rome/)
 
 ## Development
 
