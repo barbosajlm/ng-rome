@@ -54,13 +54,13 @@ To use `ng-rome` just add the tag `<ng-rome ng-model="yourModelGoesHere"></ng-ro
 
 #### options available
 
-**rome-options**(optional)
+* **rome-options**(optional)
 
 With simple usage you get the default configuration plus the custom options you defined on the provider. 
 If you want to override that configuration in a specific case you could use the attribute `rome-options` and pass an object 
 just like in **.setMultipleOptions( {options} )**.
 
-**rome-inline**(optional)
+* **rome-inline**(optional)
 
 True or False(default: false). If you don't specifie this attribute your or sett it to false [Rome](https://github.com/bevacqua/rome) will be an input tag.
 Otherwise a `<div>` will show the calendar inline. You can check this at [Rome demo page](http://bevacqua.github.io/rome/)
