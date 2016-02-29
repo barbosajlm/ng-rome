@@ -43,24 +43,27 @@ module.exports = function(grunt) {
 			jshint: {
 				options: {
 					//force:          true,
-					globalstrict:   true,
 					//sub:            true,
+					globalstrict: true,					
 					node: true,
+					validthis: true,
 					loopfunc: true,
-					browser:        true,
-					devel:          true,
+					browser: true,
+					devel: true,
 					globals: {
-						angular:    false,
-						$:          false,
-						moment:		false,
+						angular: true,
+						$: false,
+						moment: false,
 						Pikaday: false,
 						module: false,
-						forge: false
+						forge: false,
+						rome: false,
+						romeInput: false
 					}
 				},
 				beforeconcat:   {
 					options: {
-						force:	false,
+						force: false,
 						ignores: ['**.min.js']
 					},
 					files: {
@@ -80,30 +83,15 @@ module.exports = function(grunt) {
 			},
 			uglify: {
 				options: {
-					mangle: false
+					mangle: true
 				},
 				build: {
 					files:  {},
-					src:    '.js',
-					dest:   '.min.js'
+					src:    'ng-rome.js',
+					dest:   'dist/ng-rome.min.js'
 				}
 			},
-			less: {
-				development: {
-					options: {
-					},
-					files: {
-						"main.css": "_base.less",
-						".css": "_.less"
-					}
-				}
-			},
-			cssmin: {
-				dev: {
-					src: ['.css'],
-					dest: '.min.css'
-				}
-			}/*,
+			/*,
 			karma: {
 				unit: {
 					configFile: publicPathRelativeRoot+'config/karma.conf.js',
@@ -120,7 +108,7 @@ module.exports = function(grunt) {
 		*/
 		// Default task(s).
 		// grunt.registerTask('default', ['jshint:beforeconcat', 'less:development', 'concat:devJs', 'concat:devCss']);
-		grunt.registerTask('default', ['jshint:beforeconcatQ', 'less:development', 'cssmin', 'uglify:build']);
+		grunt.registerTask('default', ['jshint:beforeconcatQ', 'uglify:build']);
 	
 	}
 	init({});		//initialize here for defaults (init may be called again later within a task)

@@ -7,9 +7,9 @@
 
 angular.module('myApp', [
 'ngRoute', 'ngSanitize', 'ngTouch', 'ngAnimate',		//additional angular modules
-'barbosajlm.ng-rome'
+'ng-rome'
 ]).
-config(['$routeProvider', '$locationProvider', '$compileProvider', function($routeProvider, $locationProvider, $compileProvider) {
+config(['$routeProvider', '$locationProvider', '$compileProvider', '$romeProvider', function($routeProvider, $locationProvider, $compileProvider, $romeProvider) {
 	/**
 	setup - whitelist, appPath, html5Mode
 	@toc 1.
@@ -26,7 +26,9 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	
 	
 	$routeProvider.when(appPathRoute+'home', {templateUrl: pagesPath+'home/home.html'});
-
 	$routeProvider.otherwise({redirectTo: appPathRoute+'home'});
+	$romeProvider
+		.setOption('time', false)
+		.setOption('inputFormat', 'YYYY-MM-DD');
 	
 }]);
