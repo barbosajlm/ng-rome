@@ -22,7 +22,8 @@
 		"Gruntfile.js",
 		"app.js",
 		"index.html",
-		"package.json"
+		"package.json",
+		"server.js"
 	],
 	"dependencies": {
 		"angular":"~1.2.0",
