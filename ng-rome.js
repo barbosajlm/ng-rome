@@ -112,8 +112,8 @@ function romeDirective( rService ) {
 	var div_id;
 
 	function makeRome( scope , element ){
-		rService.newRome(element[0].childNodes[0], scope.options).on('data', function(){
-			scope.$evalAsync(submitChanges(scope, element));
+		rService.newRome( element[0].childNodes[0], scope.options).on('data', function(){
+			scope.$evalAsync( submitChanges( scope, element));
 		});
 	}							
 
