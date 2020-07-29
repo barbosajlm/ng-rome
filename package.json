@@ -7,7 +7,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"express":"~3.4.4",
+		"express":"~4.17.1",
 		"grunt": "~0.4.1",
 		"karma":"~0.10.0",
 		"grunt-contrib-concat": "~0.3.0",
